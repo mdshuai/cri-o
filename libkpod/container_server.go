@@ -21,7 +21,7 @@ import (
 	rspec "github.com/opencontainers/runtime-spec/specs-go"
 	"github.com/opencontainers/selinux/go-selinux/label"
 	"github.com/pkg/errors"
-	pb "k8s.io/kubernetes/pkg/kubelet/api/v1alpha1/runtime"
+	pb "k8s.io/kubernetes/pkg/kubelet/apis/cri/v1alpha1/runtime"
 )
 
 // ContainerServer implements the ImageServer

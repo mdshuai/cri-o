@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"k8s.io/apimachinery/pkg/fields"
-	pb "k8s.io/kubernetes/pkg/kubelet/api/v1alpha1/runtime"
+	pb "k8s.io/kubernetes/pkg/kubelet/apis/cri/v1alpha1/runtime"
 
 	"github.com/containers/storage"
 	"github.com/kubernetes-incubator/cri-o/libkpod/common"

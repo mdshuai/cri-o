@@ -18,7 +18,7 @@ import (
 	"github.com/kubernetes-incubator/cri-o/server/seccomp"
 	"github.com/pkg/errors"
 	knet "k8s.io/apimachinery/pkg/util/net"
-	pb "k8s.io/kubernetes/pkg/kubelet/api/v1alpha1/runtime"
+	pb "k8s.io/kubernetes/pkg/kubelet/apis/cri/v1alpha1/runtime"
 	"k8s.io/kubernetes/pkg/kubelet/network/hostport"
 	"k8s.io/kubernetes/pkg/kubelet/server/streaming"
 	iptablesproxy "k8s.io/kubernetes/pkg/proxy/iptables"

@@ -8,7 +8,7 @@ import (
 	"github.com/containers/storage"
 	"github.com/pkg/errors"
 	"golang.org/x/net/context"
-	pb "k8s.io/kubernetes/pkg/kubelet/api/v1alpha1/runtime"
+	pb "k8s.io/kubernetes/pkg/kubelet/apis/cri/v1alpha1/runtime"
 )
 
 // ImageStatus returns the status of the image.
