@@ -8,8 +8,12 @@ import (
 	"github.com/kubernetes-incubator/cri-o/libkpod"
 )
 
-//CrioConfigPath is the default location for the conf file
-const CrioConfigPath = "/etc/crio/crio.conf"
+const (
+	//CrioConfigPath is the default location for the conf file
+	CrioConfigPath = "/etc/crio/crio.conf"
+	CrioDefaultListen = "/var/run/crio.sock"
+	CrioDefaultStreamPort = "10010"
+)
 
 // Config represents the entire set of configuration values that can be set for
 // the server. This is intended to be loaded from a toml-encoded config file.
@@ -104,9 +108,9 @@ func DefaultConfig() *Config {
 	return &Config{
 		Config: *libkpod.DefaultConfig(),
 		APIConfig: APIConfig{
-			Listen:        "/var/run/crio.sock",
+			Listen:        CrioDefaultListen,
 			StreamAddress: "",
-			StreamPort:    "10010",
+			StreamPort:    CrioDefaultStreamPort,
 		},
 	}
 }
